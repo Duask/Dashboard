@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    
+}
+
+#side-bar {
+    background-color: #0084d4;
+    color: white;
+    font-weight: 900;
+    padding: 30px;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+
+#side-bar .logo {
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+}
+
+#side-bar .logo svg{
+    width: 75px; 
+    fill:white;
+}
+
+#side-bar .logo ~ div ul{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+}
+
+#side-bar ul li{
+    list-style: none;
+    font-size: 26px;
+}
+
+#side-bar ul li svg{
+    fill: white;
+    width: 25px;
+}
+
+
+#head {
+    grid-column: 2 / 3;
+    box-shadow: 0 10px 5px lightgray;
+    padding: 20px 80px 20px 30px;
+}
+
+.search-bar{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-bar svg{
+    width: 30px;
+    fill: black;
+}
+
+.search-bar .user{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.search-bar input[type=search]{
+    border: 0;
+    border-radius: 15px;
+    background-color: rgb(213, 232, 249);
+    height: 30px;
+    padding: 10px;
+    max-width: 50%;
+    flex: 1;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero .user svg {
+    width: 60px;
+}
+
+.hero-text p{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.hero-text h6{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 25px;
+    
+}
+
+.buttons button {
+    border: 0;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #0084d4;
+    color: white;
+    border-radius: 20px;
+}
+
+#main {
+    background-color: rgb(222, 231, 237);
+    grid-column: 2 / 3;
+    padding: 40px 30px;
+    display: grid;
+    grid-template-columns: 1fr 325px;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+
+}
+
+.projects {
+    grid-column: 1/ 2;
+    grid-row: 1 / 3;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.projects-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px 30px;
+}
+
+.card {
+    padding: 30px 20px;
+    border-left: 10px solid goldenrod;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 8px 5px 5px lightgray;
+    line-height: 1.5;
+
+
+}
+
+.card p {
+    font-size: 18px;
+    color: gray;
+}
+
+.announcements {
+    grid-column: 2/3;
+}
+
+.announcement-card {
+    padding: 20px 40px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 8px 5px 5px lightgray;
+}
+
+.log {
+    padding: 20px 0;
+}
+
+.log  ~ div {
+    border-top: 2px solid lightgray;
+}
+
+.log p {
+    color: gray;
+    font-size: 14px;
+}
+
+.trending {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-card {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 8px 5px 5px lightgray;
+    gap: 20px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.profile > div > p + p {
+    color: gray;
+}
+
+.user svg{
+    width: 40px; 
+    fill:black;
+}
